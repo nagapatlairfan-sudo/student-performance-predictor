@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Performance Predictor</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="number" step="any" name="hours" placeholder="Study Hours" required>
+
+        <input type="number" step="any" name="attendance" placeholder="Attendance %" required>
+
+        <input type="number" step="any" name="previous_marks" placeholder="Previous Marks" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+</div>
+
+</body>
+</html>
